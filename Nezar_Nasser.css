@@ -211,7 +211,7 @@ nav {
 }
 
 nav button {
-    font-family: 'Audiowide', cursive;
+    font-family: 'Audiowide', cursive; /* Use Audiowide font for navigation buttons */
     color: #fff; 
     font-size: 18px;
     padding: 15px 30px;
@@ -222,15 +222,18 @@ nav button {
     transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
+nav button.active {
+    color: #ccc; /* Greyed out text color */
+    font-size: 16px; /* Slightly smaller font size */
+    transform: scale(0.95); /* Shrunken effect */
+    text-decoration: underline; /* Optional: underline for visual emphasis */
+}
+
 nav button:hover {
     color: #2980b9;
     transform: scale(1.1);
 }
 
-nav button.active {
-    color: #2980b9;
-    text-decoration: underline;
-}
 h1, h2, h3 {
     font-family: 'Audiowide', cursive; /* Use Audiowide font for h1, h2, h3 */
 }
