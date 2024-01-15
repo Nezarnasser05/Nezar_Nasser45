@@ -224,3 +224,12 @@ nav button.active {
     color: #2980b9;
     text-decoration: underline;
 }
+
+body {
+    font-family: 'Audiowide', cursive;
+}
+
+h1, h2, h3 {
+    font-family: 'Audiowide', cursive;
+}
+
