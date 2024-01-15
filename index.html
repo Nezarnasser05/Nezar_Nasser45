@@ -35,10 +35,10 @@
 </header>
 
 <nav>
-    <button onclick="showSection('contact')">Information</button>
-    <button onclick="showSection('about')">About Me</button>
-    <button onclick="showSection('downloads')">Downloads</button>
-    <button onclick="showSection('contact_me')">Contact Me</button>
+    <button onclick="showSection('contact')" data-section="contact">Information</button>
+    <button onclick="showSection('about')" data-section="about">About Me</button>
+    <button onclick="showSection('downloads')" data-section="downloads">Downloads</button>
+    <button onclick="showSection('contact_me')" data-section="contact_me">Contact Me</button>
 </nav>
 
 <section id="contact" style="display: none;">
@@ -119,14 +119,18 @@
 
 <script>
     function showSection(sectionId) {
-        // Hide all sections
         document.querySelectorAll('section').forEach(section => {
             section.style.display = 'none';
         });
 
         document.getElementById(sectionId).style.display = 'block';
+
+        document.querySelectorAll('nav button').forEach(button => {
+            button.classList.remove('active');
+        });
+
+        document.querySelector(`button[data-section="${sectionId}"]`).classList.add('active');
     }
-    
 </script>
 
 </body>
