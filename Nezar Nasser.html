@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <link rel="stylesheet" href="Nezar_Nasser.css">
+    <style>
+        /* Add additional styling here if needed */
+        /* Styles for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Nezar_Nasser.jpg" alt="Your Name">
+    <h1>Nezar Nasser Mesalm Gazer</h1>
+</header>
+
+<nav>
+    <button onclick="showSection('contact')">Information</button>
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('downloads')">Downloads</button>
+    <button onclick="showSection('contact_me')">Contact Me</button>
+</nav>
+
+<section id="contact" style="display: none;">
+    <h2 class="blue-header">Contact Information</h2>
+    <div class="centered-content">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><a href="mailto:Nezarnasser45@gmail.com">Email: Nezarnasser45@gmail.com</a></li>
+                    <li>Phone: +20-1007745941</li>
+                    <li>Address: 6th of October city, Giza, Egypt</li>
+                </ul>
+            </div>
+        <div class="grid-item">
+            <h3>Work Experience</h3>
+            <ul>
+                <li>Al Qidari - Web Design and Data Entry - Riyadh, Saudi Arabia (Remote) - 2018-2020</li>
+                <li>Concentrix - Technical Support - Giza, Egypt - 2022-2023</li>
+                <li>Iltizam - Web Application for Warehouse Management - Riyadh, Saudi Arabia (Remote) - Ongoing</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Academic Experience</h3>
+            <ul>
+                <li>Cairo University: October 2021 - June 2025</li>
+                <li>High School: 2017 - 2021</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h3>Skills and Languages</h3>
+            <ul>
+                <li>Spoken Languages: Arabic (Native), English (Proficient)</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="about" style="display: none;">
+    <h2>About Me</h2>
+    <p class="about-me">
+        I am a versatile IT support specialist and web designer with a strong problem-solving aptitude and a keen eye for design. With a proven track record in delivering efficient technical support and creating visually appealing websites, I bring a dynamic skill set to any project. My ability to communicate complex concepts in a user-friendly manner, coupled with proficiency in HTML, CSS, and JavaScript, enables me to excel in both IT support and web design roles. I thrive in collaborative environments, adapt quickly to emerging technologies, and consistently contribute to the success of projects.
+    </p>
+</section>
+
+<section id="downloads" style="display: none;">
+    <h2>Downloads</h2>
+    <ul>
+        <li><a href="link_to_full_cv.pdf" download target="_blank">Full CV</a></li>
+        <li><a href="IT.pdf" download target="_blank">Google IT Course Certification</a></li>
+        <li><a href="Sysadmin.pdf" download target="_blank">Red Hat System Administration Certification</a></li>
+        <li><a href="SAT.pdf" download target="_blank">SAT Certification</a></li>
+        <li><a href="Python.pdf" download target="_blank">Google Python Certification</a></li>
+        <li><a href="IELTS.pdf" download target="_blank">IELTS Academic Certification</a></li>
+        <li><a href="Duolingo.pdf" download target="_blank">Duolingo English Exam Certification</a></li>
+    </ul>
+</section>
+
+<section id="contact_me" style="display: none;">
+        <h2>Contact Me</h2>
+        <form
+        action="https://formspree.io/f/xrgnbale"
+        method="POST"
+        >
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Email">
+        </form>
+    </div>
+</div>
+
+<script>
+    // JavaScript to show/hide sections based on button clicks
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+    
+</script>
+
+</body>
+</html>
+</html>
